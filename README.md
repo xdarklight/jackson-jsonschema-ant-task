@@ -16,8 +16,7 @@ There are a few preconditions for using this Ant task:
 ```xml
 <path id="project.classpath">
 	<pathelement path="${java.class.path}/"/>
-    <pathelement location="lib/" /> <!-- should contain jackson-module-jsonSchema and it's dependencies -->
-	<pathelement path="${ext.bshweb.classpath}" />
+	<pathelement location="lib/" /> <!-- should contain jackson-module-jsonSchema and it's dependencies -->
 	<pathelement path="classes/" /> <!-- path to your classes directory where you have the class for which you want to generate the JSON schema -->
 	<pathelement path="/path/to/jackson-jsonschema-ant-task-VERSION.jar" />
 </path>
