@@ -36,7 +36,7 @@ There are a few preconditions for using this Ant task:
 Attribute   | Description | Required
 ----------- | ----------- | ------------------
 classname   | The Java class for which the JSON Schema will be generated (including all referenced classes) | yes
-deswtfile   | The target file to which the JSON Schema will be written | no
+destfile    | The target file to which the JSON Schema will be written | yes
 
 ## License
 
