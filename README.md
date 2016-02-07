@@ -1,6 +1,6 @@
 # Ant task to generate JSON Schemas using Jackson
 
-Easily generate JSON Schemas from your Jackson (http://wiki.fasterxml.com/JacksonHome) annotated Java classes with Apache Ant.
+Easily generate JSON Schemas from your Java classes with Apache Ant using the [Jackson](http://wiki.fasterxml.com/JacksonHome) library and extension modules.
 
 ## Usage
 
