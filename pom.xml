@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.blumenstingl</groupId>
 	<artifactId>jackson-jsonschema-ant-task</artifactId>
-	<version>0.1.0</version>
+	<version>0.1.1-SNAPSHOT</version>
 	<name>jackson-jsonschema-ant-task</name>
 	<packaging>jar</packaging>
 	<description>Jackson Json Schema Generation Ant Task</description>
@@ -13,8 +13,7 @@
 		<connection>scm:git:git@github.com:xdarklight/jackson-jsonschema-ant-task.git</connection>
 		<developerConnection>scm:git:git@github.com:xdarklight/jackson-jsonschema-ant-task.git</developerConnection>
 		<url>https://github.com/xdarklight/jackson-jsonschema-ant-task</url>
-	  <tag>jackson-jsonschema-ant-task-0.1.0</tag>
-  </scm>
+	</scm>
 
 	<developers>
 		<developer>
