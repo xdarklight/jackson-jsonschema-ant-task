@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<project basedir="." xmlns:ca="antlib:net.sourceforge.clearantlib">
+
+	<property name="temp.dir" value="${java.io.tmpdir}/jsonschema-anttask-test/" />
+
+	<target name="clean">
+		<delete dir="${temp.dir}" />
+		<mkdir dir="${temp.dir}" />
+	</target>
+
+	<target name="makeTask" depends="clean">
+		<taskdef name="jsonschema" classname="eu.blumenstingl.jackson.jsonschema.anttask.JsonSchemaTask" />
+	</target>
+
+	<target name="noClassnameGiven" depends="makeTask">
+		<jsonschema destfile="${temp.dir}/test.jsonschema" />
+	</target>
+
+	<target name="noDestfileGiven" depends="makeTask">
+		<jsonschema classname="eu.blumenstingl.jackson.jsonschema.anttask.SampleJson" />
+	</target>
+
+	<target name="emptyClassnameGiven" depends="makeTask">
+		<jsonschema destfile="${temp.dir}/test.jsonschema" classname="   " />
+	</target>
+
+	<target name="destfileIsADirectory" depends="makeTask">
+		<jsonschema classname="eu.blumenstingl.jackson.jsonschema.anttask.SampleJson" destfile="${temp.dir}" />
+	</target>
+
+	<target name="mustAllowDestfileInExistingSubdirectory" depends="makeTask">
+		<mkdir dir="${temp.dir}/subdir" />
+		<jsonschema classname="eu.blumenstingl.jackson.jsonschema.anttask.SampleJson" destfile="${temp.dir}/subdir/test.jsonschema" />
+	</target>
+
+	<target name="createMissingParentDirectories" depends="makeTask">
+		<jsonschema classname="eu.blumenstingl.jackson.jsonschema.anttask.SampleJson" destfile="${temp.dir}/subdir/test.jsonschema" />
+	</target>
+
+	<target name="createJsonSchema" depends="makeTask">
+		<jsonschema classname="eu.blumenstingl.jackson.jsonschema.anttask.SampleJson" destfile="${temp.dir}/test.jsonschema" />
+	</target>
+</project>
