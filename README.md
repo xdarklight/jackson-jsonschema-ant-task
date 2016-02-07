@@ -41,3 +41,9 @@ destfile    | The target file to which the JSON Schema will be written | yes
 ## License
 
 The Ant task is offered under the Apache 2.0 license, see ```LICENSE```
+
+## Building a new release
+
+```bash
+mvn release:prepare
+```
