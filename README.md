@@ -21,7 +21,7 @@ There are a few preconditions for using this Ant task:
 	<pathelement path="/path/to/jackson-jsonschema-ant-task-VERSION.jar" />
 </path>
 
-<taskdef resource="eu/blumenstingl/jackson/jsonschema/jsonschematasks.properties" classpathref="project.classpath">
+<taskdef resource="com/github/xdarklight/jackson/jsonschema/jsonschematasks.properties" classpathref="project.classpath">
 </taskdef>
 
 <target name="generateJsonSchema">

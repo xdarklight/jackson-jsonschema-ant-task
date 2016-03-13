@@ -1,4 +1,4 @@
-package eu.blumenstingl.jackson.jsonschema.anttask;
+package com.github.xdarklight.jackson.jsonschema.anttask;
 
 import java.io.File;
 import java.io.IOException;
