@@ -7,3 +7,8 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 buildNumber.properties
+.project
+.settings/
+.externalToolBuilders/
+.classpath
+.springBeans
